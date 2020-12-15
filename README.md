@@ -7,4 +7,11 @@ cloud environments, and web servers engines.
 
 This project does not include extra libraries or resources.
 
+---
+## references
+
+* Running Django on the App Engine standard environment
+https://cloud.google.com/python/django/appengine
+
+---
 😃 😃 😃 😃 😃 😃 😃
