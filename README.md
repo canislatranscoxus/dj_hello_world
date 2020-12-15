@@ -39,6 +39,17 @@ https://8000-cs-185113205129-default.us-central1.cloudshell.dev/hello/?authuser=
 https://8000-cs-185113205129-default.us-central1.cloudshell.dev/get_date_time/?authuser=0&environment_name=default/
 
 ---
+## test on GCP App Engine
+
+deploy from console
+
+`gcloud app deploy`
+
+next, a link must appear. Something like this
+
+https://prjdj01.uc.r.appspot.com/
+
+---
 ## references
 
 * Running Django on the App Engine standard environment
