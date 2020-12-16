@@ -5,10 +5,11 @@ This is a Hello world app in Django python web development framework.
 The current project and app is Just for play and test 
 cloud environments, and web servers engines. 
 
-This project does not include extra libraries or resources.
+This project does not include extra libraries, images, css nor resources.
+
 ---
 
-to run django app
+to run django app locally execute the following command
 
 `python3 manage.py runserver`
 
@@ -42,7 +43,8 @@ https://8000-cs-185113205129-default.us-central1.cloudshell.dev/get_date_time/?a
 ## test on GCP App Engine
 
 * create a gcp project
-* enable App Engine API
+* in  ≡ Navigation Menu / Enable APIs & Services / + Enable APIs
+  enable App Engine Admin API
 * enable billing
 * on cloud shell set project
 
@@ -53,13 +55,27 @@ https://8000-cs-185113205129-default.us-central1.cloudshell.dev/get_date_time/?a
 
 `gcloud app create`
 
-deploy from console
+* download code
+    * my hello world django sample
+        `https://github.com/canislatranscoxus/dj_hello_world.git`
+    
+        `cd dj_hello_world/my_proj`
+    
+    * gcp hello word
+        `https://github.com/GoogleCloudPlatform/python-docs-samples.git`
 
-`gcloud app deploy`
+        `cd python-docs-samples/appengine/standard_python3/hello_world/`
 
-next, a link must appear. Something like this
+* deploy from console
 
-https://prjdj01.uc.r.appspot.com/
+`gcloud app deploy app.yaml`
+
+* test site on cloud
+    * gcp hello world (flask) 
+        https://prjdj02.ue.r.appspot.com/
+
+    * aat hello world (django)
+        https://aat-hello-world.ue.r.appspot.com/
 
 ---
 ## references
