@@ -41,6 +41,18 @@ https://8000-cs-185113205129-default.us-central1.cloudshell.dev/get_date_time/?a
 ---
 ## test on GCP App Engine
 
+* create a gcp project
+* enable App Engine API
+* enable billing
+* on cloud shell set project
+
+`gcloud config set project <my_project_ID>`
+
+* create App in App Engine dashboard GUI, 
+  or in cloud shell
+
+`gcloud app create`
+
 deploy from console
 
 `gcloud app deploy`
