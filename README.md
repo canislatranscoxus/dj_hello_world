@@ -57,7 +57,8 @@ https://8000-cs-185113205129-default.us-central1.cloudshell.dev/get_date_time/?a
 
 * download code
     * my hello world django sample
-        `https://github.com/canislatranscoxus/dj_hello_world.git`
+
+        `git clone https://github.com/canislatranscoxus/dj_hello_world.git`
     
         `cd dj_hello_world/my_proj`
     
@@ -65,6 +66,15 @@ https://8000-cs-185113205129-default.us-central1.cloudshell.dev/get_date_time/?a
         `https://github.com/GoogleCloudPlatform/python-docs-samples.git`
 
         `cd python-docs-samples/appengine/standard_python3/hello_world/`
+
+* create virtual environment using Python 3.
+
+    `python3 -m venv env`
+    
+    `source env/bin/activate`
+    
+    `pip3 install -r requirements.txt`
+
 
 * deploy from console
 
@@ -76,6 +86,17 @@ https://8000-cs-185113205129-default.us-central1.cloudshell.dev/get_date_time/?a
 
     * aat hello world (django)
         https://aat-hello-world.ue.r.appspot.com/
+
+---
+
+## some errors
+
+* **502 Bad gateway**. Compare your code with some other that works deployed to GCP App Engine.
+  For my case, my_app/urls.py was missing the line
+
+    `app_name = 'my_app' `
+
+    My django project was running locally, but I was getting the error when running on cloud.
 
 ---
 ## references
